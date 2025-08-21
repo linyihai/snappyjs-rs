@@ -1,0 +1,21 @@
+[package]
+edition = "2021"
+name    = "snappyjs-rs"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+name       = "snappy"
+
+[dependencies]
+napi        = { version = "3.2.4", default-features = false, features = ["napi8"] }
+napi-derive = "3.2.4"
+snap        = "1"
+
+[build-dependencies]
+napi-build = "2.2.3"
+
+[profile.release]
+codegen-units = 1
+lto           = true
+strip         = true
