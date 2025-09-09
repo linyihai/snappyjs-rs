@@ -1,6 +1,6 @@
 {
   "name": "snappyjs-rs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
   "repository": "https://github.com/linyihai/snappyjs-rs",
@@ -46,21 +46,21 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@emnapi/core": "^1.4.5",
-    "@emnapi/runtime": "^1.4.5",
+    "@emnapi/core": "^1.5.0",
+    "@emnapi/runtime": "^1.5.0",
     "@napi-rs/cli": "^3.0.3",
     "@oxc-node/core": "^0.0.32",
     "@taplo/cli": "^0.7.0",
     "@tybys/wasm-util": "^0.10.0",
     "ava": "^6.4.1",
-    "chalk": "^5.4.1",
+    "chalk": "^5.6.2",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.2",
+    "lint-staged": "^16.1.6",
     "npm-run-all2": "^8.0.4",
-    "oxlint": "^1.8.0",
+    "oxlint": "^1.14.0",
     "prettier": "^3.6.2",
     "snappyjs": "0.7.0",
-    "tinybench": "^5.0.0",
+    "tinybench": "^5.0.1",
     "typescript": "^5.8.3"
   },
   "lint-staged": {
@@ -95,5 +95,8 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "yarn@4.9.2"
+  "packageManager": "yarn@4.9.2",
+  "resolutions": {
+    "wrap-ansi": "^9.0.0"
+  }
 }
