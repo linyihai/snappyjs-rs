@@ -1,7 +1,7 @@
 {
   "name": "snappyjs-rs",
-  "version": "1.0.1",
-  "description": "Template project for writing node package with napi-rs",
+  "version": "1.0.2",
+  "description": "This offers `Snappyjs` snappy compress API but use `rust-snappy` as backend via `napi-rs`.",
   "main": "index.js",
   "repository": "https://github.com/linyihai/snappyjs-rs",
   "license": "MIT",
@@ -98,5 +98,8 @@
   "packageManager": "yarn@4.9.2",
   "resolutions": {
     "wrap-ansi": "^9.0.0"
+  },
+  "optionalDependencies": {
+    "snappyjs-rs-win32-x64-msvc": "1.0.1"
   }
 }
